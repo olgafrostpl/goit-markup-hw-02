@@ -1,0 +1,118 @@
+:root {
+  --primary-brand-color: #4d5ae5;
+  /* IRIS CTAs Focused Active states Links */
+  --pressed-color: #404bbf;
+  /* OCEAN CTAs */
+  --dark: #2e2f42;
+  /* NAVY BLUE Overlays Shadows Headings */
+  --success-color: #31d0aa;
+  /* background: #31D0AA; opacity: 0.5;
+   background: #31D0AA; opacity: 0.75; */
+  /* GREEN Valid fields Success messages */
+  --text-color: #434455;
+  /* SLATE Body text */
+  --subtle-text-color: #8e8f99;
+  /* LIGHT SLATE Helper text Deemphasized text */
+  --accent-color: #e7e9fc;
+  /* CORNFLOWER Accent color Hairlines Subtle backgrounds */
+  --light-color: #f4f4fd;
+  /* CLOUD Light mode backgrounds Light mode Dialogs/alerts */
+  --modal-overlay: #2e2f42;
+  /* NAVY BLUE modal overlay*/
+  --Hero-background: #2e2f42;
+  /* Grey Hero image background */
+}
+
+body {
+  color: var(--text-color);
+  font-family: Roboto, Raleway, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+.site-nav .link {
+  color: var(--dark);
+  text-decoration: none;
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--pressed-color);
+}
+
+.link-contact {
+  color: var(--text-color);
+}
+
+.link-contact:hover,
+.link-contact:focus {
+  color: var(--pressed-color);
+}
+
+.list {
+  list-style: none;
+}
+h1 {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  text-align: center;
+  color: #ffffff;
+}
+h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  text-transform: capitalize;
+  color: var(--dark);
+}
+
+h3 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2px;
+  color: var(--dark);
+}
+
+.logo {
+  width: 44px;
+  height: 24px;
+  font-family: 'Raleway';
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-brand-color);
+  text-decoration: none;
+}
+.logo-studio {
+  width: 71px;
+  color: var(--modal-overlay);
+}
+/* logo-footer */
+.logo-footer {
+  width: 44px;
+  height: 22px;
+  font-family: 'Raleway';
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  /* identical to box height */
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-brand-color);
+  text-decoration: none;
+}
+
+.logo-footer-studio {
+  width: 71px;
+  color: var(--light-color);
+}
+
+.sectionBackground {
+  background: #2e2f42;
+}
+.description-footer {
+  color: var(--accent-color);
+}
