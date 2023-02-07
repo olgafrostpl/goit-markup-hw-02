@@ -3,7 +3,7 @@
   /* IRIS CTAs Focused Active states Links */
   --pressed-color: #404bbf;
   /* OCEAN CTAs */
-  --dark: #2e2f42;
+  --dark-color: #2e2f42;
   /* NAVY BLUE Overlays Shadows Headings */
   --success-color: #31d0aa;
   /* background: #31D0AA; opacity: 0.5;
@@ -18,9 +18,9 @@
   --light-color: #f4f4fd;
   /* CLOUD Light mode backgrounds Light mode Dialogs/alerts */
   --modal-overlay: #2e2f42;
-  /* NAVY BLUE modal overlay*/
+  /* NAVY BLUE MODAL overlay*/
   --Hero-background: #2e2f42;
-  /* Grey Hero image background */
+  /* GRAY Hero image background */
 }
 
 body {
@@ -30,8 +30,16 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
-.site-nav .link {
-  color: var(--dark);
+
+.list {
+  list-style: none;
+}
+
+.site-nav {
+  font-weight: 500;
+}
+.link {
+  color: var(--dark-color);
   text-decoration: none;
 }
 .site-nav .link:hover,
@@ -41,6 +49,7 @@ body {
 
 .link-contact {
   color: var(--text-color);
+  text-decoration: none;
 }
 
 .link-contact:hover,
@@ -48,9 +57,6 @@ body {
   color: var(--pressed-color);
 }
 
-.list {
-  list-style: none;
-}
 h1 {
   font-weight: 700;
   font-size: 56px;
@@ -64,14 +70,14 @@ h2 {
   line-height: 1.11;
   text-align: center;
   text-transform: capitalize;
-  color: var(--dark);
+  color: var(--dark-color);
 }
 
 h3 {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2px;
-  color: var(--dark);
+  color: var(--dark-color);
 }
 
 .logo {
@@ -85,24 +91,18 @@ h3 {
   text-transform: uppercase;
   color: var(--primary-brand-color);
   text-decoration: none;
+  display: flex;
+  align-items: center;
 }
 .logo-studio {
   width: 71px;
-  color: var(--modal-overlay);
+  color: var(--dark-color);
 }
 /* logo-footer */
-.logo-footer {
-  width: 44px;
+.footer {
   height: 22px;
-  font-family: 'Raleway';
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 21px;
+  line-height: 1.17;
   /* identical to box height */
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--primary-brand-color);
-  text-decoration: none;
 }
 
 .logo-footer-studio {
@@ -110,9 +110,43 @@ h3 {
   color: var(--light-color);
 }
 
-.sectionBackground {
-  background: #2e2f42;
+.section-bkg {
+  background: var(--modal-overlay);
 }
 .description-footer {
   color: var(--accent-color);
+}
+/* Button Text */
+
+.button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  background: var(--primary-brand-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  cursor: pointer;
+}
+.filter {
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: var(--primary-brand-color);
+  background: var(--light-color);
+  border: 1px solid #e7e9fc;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.filter:hover,
+.filter:focus {
+  color: #ffffff;
+  background: #404bbf;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
